@@ -77,18 +77,20 @@ namespace AddressBookApp
         }
     }
 
-    class AddressBookMain
+    class Program
     {
         static void Main(string[] args)
         {
             AddressBook addressBook = new AddressBook();
 
-            // ... Adding contacts (similar to previous example)
+            // Adding some contacts (you can add more contacts here)
 
-            Console.WriteLine("Enter the first name of the contact to edit:");
+            Console.WriteLine("Welcome to Address Book");
+
+            Console.Write("Enter the first name of the contact to edit: ");
             string editFirstName = Console.ReadLine();
 
-            Console.WriteLine("Enter the last name of the contact to edit:");
+            Console.Write("Enter the last name of the contact to edit: ");
             string editLastName = Console.ReadLine();
 
             addressBook.EditContact(editFirstName, editLastName);
